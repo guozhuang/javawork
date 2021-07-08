@@ -1,0 +1,7 @@
+HELP.md
+target/
+
+### IntelliJ IDEA ###
+.idea
+.mvn
+###后续替换打包方式
