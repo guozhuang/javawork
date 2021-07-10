@@ -19,12 +19,12 @@ public class SpringJdbcController {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    /*@GetMapping("/all")
+    @GetMapping("/all")
     public List<User> queryUsers() {
         // 查询所有用户
         String sql = "select * from t_user";
         return jdbcTemplate.query(sql, new Object[]{}, new BeanPropertyRowMapper<>(User.class));
-    }*/
+    }
 
     @GetMapping("/{id}")
     public User getUser(@PathVariable Long id) {
